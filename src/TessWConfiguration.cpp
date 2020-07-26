@@ -1,6 +1,7 @@
 #include "TessWConfiguration.h"
 
-TessWConfiguration::TessWConfiguration() {
+TessWConfiguration::TessWConfiguration(Logging* log) {
+    this->logging = log;
     this->offsetMagnitudes = 20.0;
 }
 

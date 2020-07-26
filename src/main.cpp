@@ -6,9 +6,10 @@ TessWConfiguration *tessWConfiguration = nullptr;
 Logging *logging = nullptr;
 
 void setup() {
-  tessWConfiguration = new TessWConfiguration();
   logging = new Logging();
+  tessWConfiguration = new TessWConfiguration(logging);
 
+  // test logging
   logging->write("Test", "Test");
 }
 
@@ -16,7 +17,7 @@ void loop() {
   
 }
 
-// converts the Hertz value from the TSL into a magnitude value
+// converts the Hertz value from the TSL237 sensor into a magnitude value
 float HzToMag(float HzTSL) {
   float mv;
   
