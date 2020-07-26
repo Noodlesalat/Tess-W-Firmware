@@ -10,3 +10,7 @@ TessWConfiguration::~TessWConfiguration() {}
 float TessWConfiguration::getoffsetMagnitudes() {
     return this->offsetMagnitudes;
 }
+
+int TessWConfiguration::getHeaterPin() {
+    return this->heaterPin;
+}

@@ -10,13 +10,16 @@ class TessWConfiguration {
     ~TessWConfiguration();
 
     float getoffsetMagnitudes();
+    int getHeaterPin();
 
   private:
     Logging* logging;
 
     // LOCAL Configuration
+    int hardwareVersion;
     std::string tessName;
     float offsetMagnitudes;
+    int heaterPin;
 
     // WiFi Configuration
     std::string ssid;
